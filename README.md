@@ -43,10 +43,10 @@ Markdown string.
 ## Related
 
 * [md-article][md-article] - extract data from your markdown article
-* [md-content][md-content] - get content from markdown article
-* [md-date][md-date] - get date from markdown article
-* [md-desc][md-desc] - get description from markdown article
-* [md-image][md-image] - get image from markdown article
+    * [md-content][md-content] - get content from markdown article
+    * [md-date][md-date] - get date from markdown article
+    * [md-desc][md-desc] - get description from markdown article
+    * [md-image][md-image] - get image from markdown article
 
 ## License
 
