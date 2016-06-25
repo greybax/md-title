@@ -17,8 +17,8 @@ const isTitle = node => isHeader(node) && isLevel(node, 1);
 export default input => {
     if (!input)
         return;
-    let ast = remark().parse(input).children;
 
+    let ast = remark().parse(input).children;
     let clonedAst = { type: "root", children: [] };
 
     for (let i = 0; i < ast.length; i++) {
@@ -27,6 +27,9 @@ export default input => {
             break;
         }
     };
+
+    if (clonedAst.children.length === 0)
+        return;
 
     let md = remark().stringify(clonedAst);
     let dom = remark().use(html).process(md).contents;
