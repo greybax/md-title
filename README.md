@@ -46,7 +46,6 @@ Markdown string.
     * [md-content][md-content] - get content from markdown article
     * [md-date][md-date] - get date from markdown article
     * [md-desc][md-desc] - get description from markdown article
-    * [md-image][md-image] - get image from markdown article
 
 ## License
 
@@ -69,4 +68,3 @@ MIT © [Aleksandr Filatov](https://alfilatov.com)
 [md-content]: https://github.com/greybax/md-content
 [md-date]: https://github.com/greybax/md-date
 [md-desc]: https://github.com/greybax/md-desc
-[md-image]: https://github.com/greybax/md-image

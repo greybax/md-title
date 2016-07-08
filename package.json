@@ -1,6 +1,6 @@
 {
   "name": "md-title",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "get title from markdown article",
   "main": "index.es5.js",
   "scripts": {
@@ -44,7 +44,7 @@
   },
   "dependencies": {
     "remark": "^5.0.1",
-    "remark-html": "^4.0.0",
+    "remark-html": "^5.0.0",
     "striptags": "^2.1.1"
   }
 }
