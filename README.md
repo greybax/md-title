@@ -45,7 +45,7 @@ Markdown string.
 * [md-article][md-article] - extract data from your markdown article
     * [md-content][md-content] - get content from markdown article
     * [md-date][md-date] - get date from markdown article
-    * [md-desc][md-desc] - get description from markdown article
+    * [md-tags][md-tags] - get tags from markdown article
 
 ## License
 
@@ -67,4 +67,4 @@ MIT © [Aleksandr Filatov](https://alfilatov.com)
 [md-article]: https://github.com/greybax/md-article
 [md-content]: https://github.com/greybax/md-content
 [md-date]: https://github.com/greybax/md-date
-[md-desc]: https://github.com/greybax/md-desc
+[md-tags]: https://github.com/greybax/md-tags
