@@ -1,6 +1,6 @@
 {
   "name": "md-title",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "get title from markdown article",
   "main": "index.es5.js",
   "scripts": {
@@ -34,8 +34,8 @@
   "homepage": "https://github.com/greybax/md-title#readme",
   "devDependencies": {
     "assert": "*",
-    "babel-cli": "^6.9.0",
-    "babel-core": "^6.9.0",
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
     "babel-preset-es2015": "^6.9.0",
     "coveralls": "*",
     "isparta": "*",
@@ -43,8 +43,6 @@
     "rimraf": "*"
   },
   "dependencies": {
-    "remark": "^5.0.1",
-    "remark-html": "^5.0.0",
-    "striptags": "^2.1.1"
+    "remark-helpers": "^0.0.4"
   }
 }

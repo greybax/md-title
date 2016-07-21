@@ -1,41 +1,27 @@
-import remark from 'remark';
-import html from "remark-html";
-import striptags from 'striptags';
+import { ast, text, html, isHeading, isDepth } from 'remark-helpers';
 
-// TODO: Need to move it to helper functions
-const isHeader = (node) => {
-    return node.type === "heading";
-}
-
-// TODO: Need to move it to helper functions
-const isLevel = (node, level) => {
-    return node.depth === level;
-}
-
-const isTitle = node => isHeader(node) && isLevel(node, 1);
+const isTitle = node => isHeading(node) && isDepth(node, 1);
 
 export default input => {
     if (!input)
         return;
 
-    let ast = remark().parse(input).children;
-    let clonedAst = { type: "root", children: [] };
+    let mdast = ast(input).children;
+    let clonedMdast = { type: "root", children: [] };
 
-    for (let i = 0; i < ast.length; i++) {
-        if (isTitle(ast[i])) {
-            clonedAst.children.push(ast[i]);
+    for (let i = 0; i < mdast.length; i++) {
+        if (isTitle(mdast[i])) {
+            clonedMdast.children.push(mdast[i]);
             break;
         }
     };
 
-    if (clonedAst.children.length === 0)
+    if (clonedMdast.children.length === 0)
         return;
 
-    let md = remark().stringify(clonedAst);
-    let dom = remark().use(html).process(md).contents;
     return {
-        text: striptags(dom).trim(),
-        html: dom.trim(),
-        clonedAst
+        text: text(clonedMdast),
+        html: html(clonedMdast),
+        clonedMdast
     };
 };
