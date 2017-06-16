@@ -43,6 +43,6 @@
     "rimraf": "*"
   },
   "dependencies": {
-    "remark-helpers": "^0.0.5"
+    "remark-helpers": "^0.0.6"
   }
 }
