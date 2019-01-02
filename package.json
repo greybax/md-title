@@ -40,7 +40,7 @@
     "coveralls": "*",
     "isparta": "*",
     "mocha": "*",
-    "rimraf": "*"
+    "rimraf": ">=2.6.3"
   },
   "dependencies": {
     "remark-helpers": "^0.0.6"
